@@ -1,0 +1,27 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class Map {
+	public static void main(String[] args)
+	{
+		TreeMap<String,String> hss=new TreeMap<>();
+		hss.put("Tamil Nadu", "Chennai");
+        hss.put("Karnataka", "Bangalore");
+        hss.put("Maharastra", "Mumbai");
+        hss.put("New Delhi", "New Delhi");
+        hss.put("West Bengal", "Kolkatta");
+                
+        //System.out.println("Initial Mappings are: " + hss);
+        //System.out.println("The set is: " + hss.keySet());
+        
+        Set<String> ss=hss.keySet();
+        Iterator<String> is= ss.iterator();
+        while(is.hasNext()) {
+        	String key= is.next();
+        	String value=hss.get(key);
+        	System.out.println(key +"--->"+ value);
+        }
+	}
+}
