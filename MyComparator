@@ -1,0 +1,62 @@
+
+import java.util.*;
+
+class Product{
+	 private int id;
+	 private String name;
+	 private float price;
+	public Product(int id, String name, float price) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public float getPrice() {
+		return price;
+	}
+	public void setPrice(float price) {
+		this.price = price;
+	}
+	 
+	 
+	 
+}
+public class CollectionsDemo2 {
+
+	public static void main(String[] args) {			
+		
+		TreeSet<Product> tss = new TreeSet<>();
+		tss.add(new Product(4,"apple",150000.200f));
+		tss.add(new Product(5,"samsung",(float)137777.600));
+		for(Product str:tss)
+		{
+			
+			System.out.println(str);
+		}
+		
+		
+	}
+	
+	class MyComparator implements Comparator<Product>{
+		 
+	    @Override
+	    public int compare(Product p1, Product p2) {
+	        return (int)(p1.getPrice() - p2.getPrice());
+	    }
+	}
+	
+	
+
+}
