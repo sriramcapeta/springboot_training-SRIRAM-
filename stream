@@ -1,0 +1,14 @@
+import java.util.LinkedList;
+
+public class LinkedListNew {
+	public static void main(String[] args) {
+		LinkedList<String> lln=new LinkedList<>();
+		lln.add("chennai");
+		lln.add("Mumbai");
+		lln.add("Pune");
+		lln.add("Hyderabad");
+		
+		
+		lln.stream().filter((str)->str.length()>6).forEach((e)->System.out.println(e));
+	}
+}
