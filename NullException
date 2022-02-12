@@ -1,0 +1,11 @@
+
+public class NullException {
+
+	static int i;
+	public static void main(String args[]) {
+		
+		
+		 Object ref = null;
+	      ref.toString();
+	}
+}
