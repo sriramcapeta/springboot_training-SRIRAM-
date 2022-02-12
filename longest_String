@@ -1,0 +1,20 @@
+import java.util.*; 
+
+public class ReduceEg { 
+
+	// Driver code 
+	public static void main(String[] args) 
+	{ 
+		// creating a list of Strings 
+		List<String> words = Arrays.asList("AAA", "bbbbb", "zzzzzz", 
+										"ccccccccccc", "kkkkkkkkkkkkkkk");	
+		
+		Optional<String> longestString = words.stream()
+				.reduce((word1, word2)
+			-> word1+word2);
+		
+		// Displaying the longest String 
+		longestString.ifPresent(System.out::println); 
+		
+	} 
+} 
