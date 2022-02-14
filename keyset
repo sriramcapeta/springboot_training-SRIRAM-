@@ -1,0 +1,19 @@
+import java.util.HashMap;
+
+public class Map {
+	public static void main(String[] args)
+	{
+		HashMap<String,String> hss=new HashMap<>();
+		hss.put("Tamil Nadu", "Chennai");
+        hss.put("Karnataka", "Bangalore");
+        hss.put("Maharastra", "Mumbai");
+        hss.put("New Delhi", "New Delhi");
+        hss.put("West Bengal", "Kolkatta");
+        
+        
+        System.out.println("Initial Mappings are: " + hss);
+        
+     
+        System.out.println("The set is: " + hss.keySet());
+	}
+}
